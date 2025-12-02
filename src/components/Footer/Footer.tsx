@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export function Footer() {
+  const { t } = useTranslation()
+
   return (
     <footer id="contact" className="footer">
       <div className="container">
@@ -11,26 +15,24 @@ export function Footer() {
               <span className="logo-text">Unitex Curtain</span>
             </div>
             <p className="footer-tagline">
-              Transform your space with Unitex—custom curtains that combine timeless design, 
-              expert craftsmanship, and everyday comfort. From free measurement to final installation, 
-              we make the process simple, personal, and beautiful.
+              {t('footer.tagline')}
             </p>
           </div>
 
           <div className="footer-links">
             <div className="footer-column">
-              <h4>Company</h4>
+              <h4>{t('footer.company')}</h4>
               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Design Services</a></li>
-                <li><a href="#contact">Book Online</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><Link to="/">{t('header.nav.home')}</Link></li>
+                <li><Link to="/about">{t('header.nav.about')}</Link></li>
+                <li><Link to="/services">{t('header.nav.services')}</Link></li>
+                <li><Link to="/book">{t('header.nav.book')}</Link></li>
+                <li><Link to="/contact">{t('header.nav.contact')}</Link></li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h4>Contact Info</h4>
+              <h4>{t('footer.contact_info')}</h4>
               <ul className="contact-list">
                 <li>
                   <span className="contact-icon">📞</span>
@@ -42,7 +44,7 @@ export function Footer() {
                 </li>
                 <li>
                   <span className="contact-icon">🕒</span>
-                  <span>Mon - Fri : 9am-5pm</span>
+                  <span>{t('footer.hours')}</span>
                 </li>
                 <li>
                   <span className="contact-icon">💬</span>
@@ -54,10 +56,9 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 by Unitex Curtain Studio. All rights reserved.</p>
+          <p>{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
   )
 }
-

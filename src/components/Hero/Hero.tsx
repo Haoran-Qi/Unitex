@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import './Hero.css'
 
 export function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section id="home" className="hero">
       <div className="hero-background">
@@ -11,15 +14,15 @@ export function Hero() {
       </div>
       
       <div className="hero-content">
-        <p className="hero-tagline">Free In-Home Measurement & Design in the Greater Toronto Area!</p>
+        <p className="hero-tagline">{t('hero.tagline')}</p>
         <h1 className="hero-title">
-          Request Your Custom Drapery & Window Blinds Consultation Today!
+          {t('hero.title')}
         </h1>
         <p className="hero-subtitle">
-          Not sure where to start? Fill out the form and we can take it from there.
+          {t('hero.subtitle')}
         </p>
         <a href="#contact" className="hero-cta">
-          Start Now
+          {t('hero.cta')}
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
@@ -27,10 +30,9 @@ export function Hero() {
       </div>
 
       <div className="hero-scroll-indicator">
-        <span>Scroll</span>
+        <span>{t('hero.scroll')}</span>
         <div className="scroll-line"></div>
       </div>
     </section>
   )
 }
-
