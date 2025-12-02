@@ -37,20 +37,6 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 ```
 
-## Adding Your Images
-
-All images currently use placeholder backgrounds. To add your own images:
-
-### Hero Section
-In `src/components/Hero/Hero.tsx`, replace the placeholder div with an actual image:
-
-```tsx
-<img 
-  src="/images/hero.jpg" 
-  alt="Beautiful custom curtains" 
-  className="hero-image"
-/>
-```
 
 ### Product Cards
 In `src/components/Products/Products.tsx`, update the `products` array with image paths:
