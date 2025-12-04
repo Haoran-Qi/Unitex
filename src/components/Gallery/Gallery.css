@@ -116,11 +116,6 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .gallery-slider {
-    padding-left: calc(15% - 4px);
-    padding-right: calc(15% - 4px);
-  }
-
   .gallery-item {
     width: 70%;
     height: 55vh;
@@ -130,11 +125,6 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-  .gallery-slider {
-    padding-left: calc(10% - 4px);
-    padding-right: calc(10% - 4px);
-  }
-
   .gallery-item {
     width: 80%;
     height: 50vh;
