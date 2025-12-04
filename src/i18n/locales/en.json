@@ -1,0 +1,113 @@
+{
+  "header": {
+    "banner": "Free In-Home Measurement & Design in the Greater Toronto Area! Book Now!",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Design Services",
+      "book": "Book Online",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "tagline": "Free In-Home Measurement & Design in the Greater Toronto Area!",
+    "title": "Request Your Custom Drapery & Window Blinds Consultation Today!",
+    "subtitle": "Not sure where to start? Fill out the form and we can take it from there.",
+    "cta": "Start Now",
+    "scroll": "Scroll"
+  },
+  "products": {
+    "label": "Curtain",
+    "title": "What We Make",
+    "subtitle": "(and we are really good at it!)",
+    "items": {
+      "drapery": {
+        "title": "Drapery",
+        "description": "We create custom drapery designed to fit your space flawlessly. Each piece is hand-finished, ensuring graceful, tailored folds every time."
+      },
+      "sheer": {
+        "title": "Sheer Curtains",
+        "description": "Our sheer curtains are delicately tailored to soften light and add a layer of quiet elegance to your space."
+      },
+      "shades": {
+        "title": "Roman & Roller & Honeycomb Shades",
+        "description": "We offer three custom shade styles that blend style, function, and effortless layering."
+      },
+      "blinds": {
+        "title": "Zebra & Vertical Blinds",
+        "description": "We offer custom Zebra and vertical blinds—designed for precise light control with a clean, modern finish."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "HOW IT WORKS",
+    "subtitle": "Make it Custom",
+    "steps": {
+      "contact": {
+        "title": "Get In Touch",
+        "description": "Fill out a quick form to get started!"
+      },
+      "customize": {
+        "title": "Customize",
+        "description": "We will follow up with all the options and help you customize the project to your needs."
+      },
+      "confirm": {
+        "title": "Say Yes!",
+        "description": "Once all the details are agreed upon and measurements are checked, we press go!"
+      },
+      "production": {
+        "title": "Production",
+        "description": "Our team will create your custom project to meet our specifications."
+      },
+      "delivery": {
+        "title": "Deliver & Install",
+        "description": "This is our favourite part! We will schedule an installation service or delivery. We hope you enjoy!"
+      }
+    }
+  },
+  "about": {
+    "label": "ABOUT US",
+    "title": "With roots in a 1970 textile school, Unitex is now led by third-generation—bringing sustainable, made-to-measure curtains to homes across Toronto.",
+    "link": "LEARN MORE"
+  },
+  "testimonials": {
+    "title": "What Our Customers Are Saying",
+    "reviews": {
+      "emily": {
+        "name": "Emily R.",
+        "location": "Toronto, ON",
+        "quote": "I was blown away by the quality and fit of our new curtains. The Unitex team made the whole process—from consultation to installation—so easy and stress-free. Highly recommend!"
+      },
+      "claire": {
+        "name": "Claire M.",
+        "location": "Mississauga, ON",
+        "quote": "I've worked with other curtain companies before, but Unitex stands out. Beautiful fabrics, friendly service, and they really listened to what I wanted. My living room feels completely transformed!"
+      },
+      "jason": {
+        "name": "Jason T.",
+        "location": "North York, ON",
+        "quote": "Professional, punctual, and the result exceeded my expectations. The curtains look custom (because they are), and the price was very reasonable. Great experience all around."
+      }
+    }
+  },
+  "services": {
+    "label": "UNITEX DESIGN",
+    "title": "Curtain Design Services",
+    "description1": "Unitex provides complimentary in-home curtain design consultations. Our expert design consultants bring a wide range of fabric swatches and full-size samples directly to your home, allowing you to see, touch, and experience the materials and colors in your space's natural lighting.",
+    "description2": "This hands-on approach ensures you make the perfect choice for your home's style and ambiance. Whether you need guidance on fabric selection, design coordination, or tailored solutions, our team offers professional recommendations to create the ideal window treatment for your space.",
+    "cta_text": "Book your free consultation today and discover how Unitex can transform your home with personalized window solutions.",
+    "cta_button": "SEE OUR SERVICES"
+  },
+  "footer": {
+    "tagline": "Transform your space with Unitex—custom curtains that combine timeless design, expert craftsmanship, and everyday comfort. From free measurement to final installation, we make the process simple, personal, and beautiful.",
+    "company": "Company",
+    "contact_info": "Contact Info",
+    "hours": "Mon - Fri : 9am-5pm",
+    "copyright": "© 2025 by Unitex Curtain Studio. All rights reserved."
+  },
+  "language": {
+    "en": "English",
+    "zh": "中文"
+  }
+}
+
