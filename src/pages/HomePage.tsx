@@ -1,4 +1,5 @@
 import { Header } from '../components/Header/Header'
+import { Gallery } from '../components/Gallery/Gallery'
 import { Hero } from '../components/Hero/Hero'
 import { Products } from '../components/Products/Products'
 import { HowItWorks } from '../components/HowItWorks/HowItWorks'
@@ -12,6 +13,7 @@ export function HomePage() {
     <>
       <Header />
       <main>
+        <Gallery />
         <Hero />
         <Products />
         <HowItWorks />
@@ -23,4 +25,3 @@ export function HomePage() {
     </>
   )
 }
-
