@@ -9,12 +9,10 @@
       "contact": "联系我们"
     }
   },
-  "hero": {
-    "tagline": "大多伦多地区免费上门测量与设计！",
+  "booking": {
     "title": "立即预约您的定制窗帘咨询服务！",
     "subtitle": "不知从何开始？填写表格，我们会为您安排一切。",
-    "cta": "立即开始",
-    "scroll": "滚动"
+    "button": "开始预定"
   },
   "products": {
     "label": "窗帘",
