@@ -1,4 +1,5 @@
 import './About.css'
+import pic from '../../images/Aboutus.avif'
 
 export function About() {
   return (
@@ -6,23 +7,20 @@ export function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-image">
-            <div className="placeholder-image about-placeholder">
-              <span>About Image</span>
-            </div>
+            <img src={pic} />
             <div className="about-image-accent"></div>
           </div>
           
           <div className="about-content">
-            <span className="section-label">ABOUT US</span>
+            <h1 className="about-label">ABOUT US</h1>
             <h2 className="about-title">
               With roots in a 1970 textile school, Unitex is now led by third-generation—bringing sustainable, made-to-measure curtains to homes across Toronto.
             </h2>
-            <a href="#services" className="about-link">
-              LEARN MORE
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
+            <div className="about-box">
+              <a href="#services" className="about-link">
+                LEARN MORE
+              </a>
+            </div>
           </div>
         </div>
       </div>

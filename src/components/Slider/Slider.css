@@ -1,0 +1,165 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 800px;
+  position: relative;
+  width:100%;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.slide-left {
+  width: 30%;
+  margin-right: -5%;
+  z-index: 1;
+  transform: translateX(0);
+  clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 40% 100%);
+}
+
+.slide-center {
+  width: 50%;
+  z-index: 2;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transform: translateX(0);
+}
+
+.slide-right {
+  width: 30%;
+  margin-left: -5%;
+  z-index: 1;
+  transform: translateX(0);
+  clip-path: polygon(0% 0%, 60% 0%, 60% 100%, 0% 100%);
+}
+
+.sliding-left {
+  animation: slideLeft 0.4s ease forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-center.sliding-left {
+  animation: slideCenterLeft 0.4s ease forwards;
+}
+
+@keyframes slideCenterLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-right.sliding-left {
+  animation: slideRightLeft 0.4s ease forwards;
+}
+
+@keyframes slideRightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.sliding-right {
+  animation: slideRight 0.3s ease forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.slide-center.sliding-right {
+  animation: slideCenterRight 0.3s ease forwards;
+}
+
+@keyframes slideCenterRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.slide-left.sliding-right {
+  animation: slideLeftRight 0.3s ease forwards;
+}
+
+@keyframes slideLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-prev {
+  left: 20px;
+}
+
+.nav-next {
+  right: 20px;
+}

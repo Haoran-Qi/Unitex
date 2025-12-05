@@ -24,6 +24,7 @@ const testimonials = [
 export function Testimonials() {
   return (
     <section className="testimonials">
+      <div className="background-image"></div>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">What Our Customers Are Saying</h2>
@@ -36,13 +37,13 @@ export function Testimonials() {
               className="testimonial-card"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
+              <h3 className="testimonial-author">{testimonial.name} | {testimonial.location}</h3>
+              <p className="testimonial-text">{testimonial.quote}</p>
               <div className="testimonial-quote">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.15">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.8">
                   <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
                 </svg>
               </div>
-              <h3 className="testimonial-author">{testimonial.name} | {testimonial.location}</h3>
-              <p className="testimonial-text">{testimonial.quote}</p>
             </article>
           ))}
         </div>
@@ -50,4 +51,3 @@ export function Testimonials() {
     </section>
   )
 }
-

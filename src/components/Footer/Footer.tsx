@@ -1,6 +1,27 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import './Footer.css'
+import icon1 from '../../resource/Oeko_tex_-_umbrella_brand_-_11_2022.svg.png'
+import icon2 from '../../resource/071420_MECH_BlogImage_03.png'
+import icon3 from '../../resource/v2-cdb7f7cd361e2cd08085f92096e18425_720w.jpg'
+
+
+const icons = [
+  {
+    id:1 ,
+    image:icon1,
+  },
+  {
+    id:2 ,
+    image:icon2,
+  },
+  {
+    id:3 ,
+    image:icon3,
+  }
+]
+
+
 
 export function Footer() {
   const { t } = useTranslation()
@@ -10,13 +31,16 @@ export function Footer() {
       <div className="container">
         <div className="footer-main">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <div className="logo-icon">U</div>
-              <span className="logo-text">Unitex Curtain</span>
-            </div>
             <p className="footer-tagline">
               {t('footer.tagline')}
             </p>
+            <div className="footer-logo">
+              {icons.map((icon, index) => (
+              <div className="logo-icon">
+                <img src={icon.image}/>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="footer-links">

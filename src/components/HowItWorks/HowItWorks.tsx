@@ -39,6 +39,7 @@ export function HowItWorks() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">HOW IT WORKS</h2>
+          <br />
           <p className="section-subtitle">Make it Custom</p>
         </div>
 
@@ -50,13 +51,6 @@ export function HowItWorks() {
               </div>
               <h3 className="step-title">{step.title}</h3>
               <p className="step-description">{step.description}</p>
-              {index < steps.length - 1 && (
-                <div className="step-connector">
-                  <svg width="40" height="20" viewBox="0 0 40 20">
-                    <path d="M0 10 L30 10 M25 5 L30 10 L25 15" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  </svg>
-                </div>
-              )}
             </div>
           ))}
         </div>

@@ -1,0 +1,103 @@
+.aboutpage {
+  position: relative;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  min-height: 120vh;
+}
+
+.aboutpage .container {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 0 2rem;
+}
+
+.aboutpage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-items: center;
+}
+
+.aboutpage-label-container {
+  position: relative;
+  width: 60%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.aboutpage-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/Sewing Machine.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.aboutpage-label {
+  position: relative; 
+  z-index: 2;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-charcoal); 
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  font-family: 'adobe-caslon-w01-smbd, serif';
+  border: 3px solid var(--color-white);
+  border-radius: 8px;
+  background-color: var(--color-white);
+}
+
+
+.aboutpage-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-bottom: 0.5rem;
+  text-align: left;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.aboutpage-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--color-charcoal);
+  margin-bottom: 3rem;
+  align-items: left;
+}
+
+.aboutpage-description {
+  font-size: 0.8rem;
+  color: var(--color-charcoal);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .aboutpage-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .aboutpage-content {
+    text-align: center;
+  }
+
+}

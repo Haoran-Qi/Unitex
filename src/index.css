@@ -7,10 +7,12 @@
   --color-charcoal-light: #4a4a4a;
   --color-gold: #c9a962;
   --color-gold-dark: #b08d3e;
+  --color-red: #FF0000;
   --color-sage: #8b9a7d;
   --color-white: #ffffff;
   --color-text: #333333;
   --color-text-light: #666666;
+  --color-brown:#58371f;
   
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -46,7 +48,7 @@ h1, h2, h3, h4 {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 a {
@@ -60,9 +62,9 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 ::selection {

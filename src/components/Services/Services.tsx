@@ -1,12 +1,10 @@
 import './Services.css'
+import pic from '../../images/livingroom.avif'
 
 export function Services() {
   return (
     <section id="services" className="services">
       <div className="services-background">
-        <div className="placeholder-image services-placeholder">
-          <span>Services Background Image</span>
-        </div>
         <div className="services-overlay"></div>
       </div>
 
@@ -32,28 +30,11 @@ export function Services() {
             </p>
             <a href="#contact" className="services-cta">
               SEE OUR SERVICES
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
             </a>
           </div>
 
           <div className="services-image">
-            <div className="placeholder-image services-img-placeholder">
-              <span>Living Room Image</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="certifications">
-          <div className="certification-item placeholder-image cert-placeholder">
-            <span>Cert 1</span>
-          </div>
-          <div className="certification-item placeholder-image cert-placeholder">
-            <span>Cert 2</span>
-          </div>
-          <div className="certification-item placeholder-image cert-placeholder">
-            <span>Cert 3</span>
+              <img src={pic} />
           </div>
         </div>
       </div>
