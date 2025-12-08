@@ -1,4 +1,5 @@
 import './About.css'
+import schoolImg from '../../resource/School.jpeg'
 
 export function About() {
   return (
@@ -6,12 +7,10 @@ export function About() {
       <div className="container">
         <div className="about-grid">
           <div className="about-image">
-            <div className="placeholder-image about-placeholder">
-              <span>About Image</span>
-            </div>
+            <img src={schoolImg} alt="Unitex Textile School" />
             <div className="about-image-accent"></div>
           </div>
-          
+
           <div className="about-content">
             <span className="section-label">ABOUT US</span>
             <h2 className="about-title">
@@ -20,7 +19,7 @@ export function About() {
             <a href="#services" className="about-link">
               LEARN MORE
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
           </div>
