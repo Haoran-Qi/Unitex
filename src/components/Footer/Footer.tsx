@@ -4,6 +4,7 @@ import './Footer.css'
 import oekoTexImg from '../../resource/Oeko_tex.svg.png'
 import mechImg from '../../resource/MECH_BlogImag.png'
 import sgsImg from '../../resource/SGS.jpg'
+import wechatIcon from '../../resource/wechat.png'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -57,7 +58,7 @@ export function Footer() {
                   <span>{t('footer.hours')}</span>
                 </li>
                 <li>
-                  <span className="contact-icon">💬</span>
+                  <img src={wechatIcon} alt="WeChat" className="contact-icon-img" />
                   <span>Unitexdesign</span>
                 </li>
               </ul>
