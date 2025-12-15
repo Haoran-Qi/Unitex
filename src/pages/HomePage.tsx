@@ -1,5 +1,6 @@
 import { Header } from '../components/Header/Header'
-import { Hero } from '../components/Hero/Hero'
+import { Gallery } from '../components/Gallery/Gallery'
+import { BookingCTA } from '../components/BookingCTA/BookingCTA'
 import { Products } from '../components/Products/Products'
 import { HowItWorks } from '../components/HowItWorks/HowItWorks'
 import { About } from '../components/About/About'
@@ -12,7 +13,8 @@ export function HomePage() {
     <>
       <Header />
       <main>
-        <Hero />
+        <Gallery />
+        <BookingCTA />
         <Products />
         <HowItWorks />
         <About />
@@ -23,4 +25,3 @@ export function HomePage() {
     </>
   )
 }
-

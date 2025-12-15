@@ -1,6 +1,9 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import './Footer.css'
+import oekoTexImg from '../../resource/Oeko_tex.svg.png'
+import mechImg from '../../resource/MECH_BlogImag.png'
+import sgsImg from '../../resource/SGS.jpg'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -10,13 +13,20 @@ export function Footer() {
       <div className="container">
         <div className="footer-main">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <div className="logo-icon">U</div>
-              <span className="logo-text">Unitex Curtain</span>
-            </div>
             <p className="footer-tagline">
               {t('footer.tagline')}
             </p>
+            <div className="footer-certifications">
+              <div className="footer-cert-item">
+                <img src={oekoTexImg} alt="Oeko-Tex Certification" />
+              </div>
+              <div className="footer-cert-item">
+                <img src={mechImg} alt="MECH Certification" />
+              </div>
+              <div className="footer-cert-item">
+                <img src={sgsImg} alt="SGS Certification" />
+              </div>
+            </div>
           </div>
 
           <div className="footer-links">

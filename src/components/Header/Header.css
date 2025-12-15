@@ -234,11 +234,11 @@
   .nav-list {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.9rem;
   }
 
   .nav-link {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-align: center;
   }
 }
@@ -252,33 +252,37 @@
   .header-banner {
     font-size: 0.7rem;
     padding: 0.4rem 0.5rem;
-    flex-wrap: wrap;
-    gap: 0.25rem;
+    padding-right: 4.5rem; /* Make room for language selector */
   }
 
   .banner-text {
-    flex: 1 1 100%;
-    order: 1;
+    font-size: 0.6rem;
+    line-height: 1.3;
   }
 
   .language-selector {
-    position: static;
-    order: 2;
-    justify-content: center;
+    position: absolute;
+    right: 0.5rem;
   }
 
   .lang-dropdown-btn {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    gap: 0.25rem;
+  }
+
+  .lang-dropdown-btn span:first-child {
+    /* Hide text, show only flag */
+    font-size: 0.4rem;
+  }
+
+  .lang-arrow {
+    font-size: 0.5rem;
   }
 
   .lang-dropdown {
-    position: fixed;
-    top: auto;
-    bottom: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 0.5rem;
+    right: 0;
+    min-width: 100px;
   }
 
   .logo {
@@ -288,7 +292,7 @@
 
   .logo-text {
     white-space: nowrap;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 
   .logo-icon {

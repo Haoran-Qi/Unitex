@@ -9,12 +9,10 @@
       "contact": "Contact"
     }
   },
-  "hero": {
-    "tagline": "Free In-Home Measurement & Design in the Greater Toronto Area!",
+  "booking": {
     "title": "Request Your Custom Drapery & Window Blinds Consultation Today!",
     "subtitle": "Not sure where to start? Fill out the form and we can take it from there.",
-    "cta": "Start Now",
-    "scroll": "Scroll"
+    "button": "Start Now"
   },
   "products": {
     "label": "Curtain",
