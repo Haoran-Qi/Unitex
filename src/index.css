@@ -11,6 +11,9 @@
   --color-white: #ffffff;
   --color-text: #333333;
   --color-text-light: #666666;
+  --color-red: #ff6b6b;
+  --color-silver: #ccc;
+  --color-blue: #4dabf7;
   
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;

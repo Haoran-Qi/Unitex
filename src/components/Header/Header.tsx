@@ -24,7 +24,7 @@ export function Header() {
     { path: '/about', labelKey: 'header.nav.about' },
     { path: '/services', labelKey: 'header.nav.services' },
     { path: '/book', labelKey: 'header.nav.book' },
-    { path: '/contact', labelKey: 'header.nav.contact' },
+    // { path: '/projects', labelKey: 'header.nav.projects' },
   ]
 
   const isActive = (path: string) => {
@@ -43,7 +43,7 @@ export function Header() {
           {t('header.banner')}
         </span>
         <div className="language-selector">
-          <button 
+          <button
             className="lang-dropdown-btn"
             onClick={() => setIsLangOpen(!isLangOpen)}
             aria-label="Select language"
@@ -73,7 +73,7 @@ export function Header() {
         </Link>
 
         <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
-          <ul className="nav-list" style={{ 
+          <ul className="nav-list" style={{
             fontWeight: 400,
             fontStyle: 'normal',
             color: '#000',
@@ -83,8 +83,8 @@ export function Header() {
           }}>
             {navLinks.map((link) => (
               <li key={link.labelKey}>
-                <Link 
-                  to={link.path} 
+                <Link
+                  to={link.path}
                   className={`nav-link ${isActive(link.path) ? 'nav-link--active' : ''}`}
                   onClick={() => setIsMenuOpen(false)}
                 >
