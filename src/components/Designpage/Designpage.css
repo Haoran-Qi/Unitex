@@ -106,3 +106,36 @@
   color: var(--color-sage);
   margin-right: 0.5rem;
 }
+
+@media (max-width: 900px) {
+  .designpage {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .designpage-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .designpage-label {
+    grid-column: 1;
+    grid-row: auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .designpage-label h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .designpage-right-grid {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .designpage-item {
+    padding: 20px;
+  }
+}

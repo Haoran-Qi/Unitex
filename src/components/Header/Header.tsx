@@ -38,7 +38,7 @@ export function Header() {
 
   return (
     <header className="header">
-      <div className="header-banner" style={{ fontFamily: 'adobe-caslon-w01-smbd,serif', fontSize: '16px' }}>
+      <div className="header-banner" style={{ fontFamily: 'adobe-caslon-w01-smbd,serif' }}>
         <span className="banner-text">
           {t('header.banner')}
         </span>
