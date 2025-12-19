@@ -20,7 +20,7 @@ export function Bookpage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -28,7 +28,7 @@ export function Bookpage() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -143,7 +143,7 @@ export function Bookpage() {
     },
   ];
 
-  const handleCheckboxChange = (value) => {
+  const handleCheckboxChange = (value: string) => {
     setSelectedServices(prev =>
       prev.includes(value)
         ? prev.filter(item => item !== value)
@@ -340,7 +340,7 @@ export function Bookpage() {
                 name="notes"
                 value={formData.notes}
                 onChange={handleChange}
-                rows="4"
+                rows={4}
               />
               <div className="input-hint">
                 {t('bookpage.hints.notes')}
