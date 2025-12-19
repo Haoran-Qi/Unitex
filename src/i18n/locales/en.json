@@ -32,6 +32,7 @@
       "about": "About",
       "services": "Design Services",
       "book": "Book Online",
+      "projects": "Project",
       "contact": "Contact"
     }
   },
@@ -122,11 +123,90 @@
     "cta_text": "Book your free consultation today and discover how Unitex can transform your home with personalized window solutions.",
     "cta_button": "SEE OUR SERVICES"
   },
+  "bookpage": {
+    "title": "Consultation Today",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "products": "What product(s) are you considering?",
+      "numberWindows": "What is the approx number of the windows?",
+      "notes": "Additional Notes",
+      "submit": "Submit"
+    },
+    "placeholders": {
+      "email": "your@email.com",
+      "number": "Enter a number"
+    },
+    "errors": {
+      "firstName": "!Enter a first name",
+      "lastName": "!Enter a last name",
+      "email": "!Enter an email address like example@mysite.com.",
+      "address": "!Enter an address.",
+      "number": "!Enter a number"
+    },
+    "hints": {
+      "address": "Street Address, City, Province, Postal Code",
+      "products": "Our blinds offer a motorized option, are compatible with smart home systems like HomeKit, Alexa, and Google Assistant, and feature solar charging for energy efficiency.",
+      "notes": "Any other details about the window or custom features that you would like to add."
+    },
+    "products": {
+      "drapery": "Drapery (blackout)",
+      "sheer": "Sheer Curtains",
+      "zebra": "Zebra Blinds",
+      "roller": "Roller Shades",
+      "roman": "Roman Shade",
+      "vertical": "Vertical Blinds",
+      "honeycomb": "Honeycomb Shades",
+      "others": "Others"
+    }
+  },
+  "designpage": {
+    "title": "Design Services",
+    "intro1": "Unitex provides complimentary in-home curtain design consultations.",
+    "intro2": "Our expert design consultants bring a wide range of fabric swatches and full-size samples directly to your home, allowing you to see, touch, and experience the materials and colors in your space's natural lighting. This hands-on approach ensures you make the perfect choice for your home's style and ambiance. Whether you need guidance on fabric selection, design coordination, or tailored solutions, our team offers professional recommendations to create the ideal curtain treatment for your space.",
+    "intro3": "Book your free consultation today and discover how Unitex can transform your home with personalized curtain solutions.",
+    "service1": {
+      "title": "1 | Free In-Home Curtain Design Consultation",
+      "description1": "Unitex offers complimentary in-home window measurement and curtain design services in the Greater Toronto Area.",
+      "description2": "During the appointment, we will review your windows, discuss the best options and styles for your space, and provide an on-the-spot estimate. There's no obligation to decide on the day — you can place your order whenever you're ready. A professional check measure service is available separately for an additional fee.",
+      "description3": "How to schedule the In-Home Consultation?",
+      "description4": "After your purchase, we will send an email to select your preferred date and time for the consultation.",
+      "notes_title": "Important Notes:",
+      "note1": "App Functions",
+      "note2": "App Functions"
+    },
+    "service2": {
+      "title": "2 | Free Curtain Installation Service",
+      "description1": "Unitex offers free installation services for all curtain purchases within the Greater Toronto Area.",
+      "description2": "Our skilled installation team will ensure your curtains are installed with precision, providing a flawless finish. This service is completely free, offering you a hassle-free experience from purchase to installation. We are committed to delivering the highest quality service, ensuring your space is transformed to perfection."
+    },
+    "service3": {
+      "title": "3 | 5-Year Warranty",
+      "description1": "Unitex offers a 5-year warranty on all curtain products.",
+      "description2": "We stand behind the quality of our curtains and ensure they are made to last. With our 5-year warranty, you can enjoy peace of mind knowing that your investment is protected for years to come."
+    },
+    "service4": {
+      "title": "4 | ​Smart Curtain Solutions",
+      "description1": "We offer smart curtain services, with motorized curtains that can be integrated with smart home devices such as HomeKit, Amazon Alexa, Google Assistant, and more. Create a fully automated curtain system for your entire home, enhancing both convenience and modern living."
+    }
+  },
+  "aboutpage": {
+    "label": "About Us",
+    "title": "The Full Story",
+    "description1": "Unitex is a Toronto-based curtain and textile brand with a rich legacy rooted in craftsmanship and care.",
+    "description2": "Our story began in 1970, when our family opened its first textile training school—mentoring over 100 fabric professionals and laying the foundation for decades of expertise. In 1996, we transitioned into the window coverings industry, bringing our knowledge directly into homes through custom, made-to-measure solutions.",
+    "description3": "Now proudly led by third-generation founder, Unitex carries forward the family tradition with a modern mission: delivering high-quality, health-conscious, and eco-friendly curtains at accessible prices.",
+    "description4": "With nearly 30 years of experience and over 1,000 happy clients, we take pride in offering thoughtful service—from free on-site consultations to precise installation. At Unitex, we believe everyone deserves beautiful, sustainable design tailored to their space."
+  },
   "footer": {
     "tagline": "Transform your space with Unitex—custom curtains that combine timeless design, expert craftsmanship, and everyday comfort. From free measurement to final installation, we make the process simple, personal, and beautiful.",
     "company": "Company",
     "contact_info": "Contact Info",
     "hours": "Mon - Fri : 9am-5pm",
+    "address": "370 Hwy 7 unit 105c, Richmond Hill, ON L4B 0C4",
     "copyright": "© 2025 by Unitex Curtain Studio. All rights reserved."
   },
   "language": {
