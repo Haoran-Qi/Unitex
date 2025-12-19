@@ -1,4 +1,30 @@
 {
+  "hero": {
+    "tagline": "定制窗帘与窗饰",
+    "title": "用手工精致改变您的空间",
+    "subtitle": "自1970年起在多伦多设计和制作的量身定制窗帘和百叶窗",
+    "cta": "开始咨询",
+    "scroll": "滚动探索"
+  },
+  "gallery": {
+    "images": {
+      "livingRoom": "客厅窗帘",
+      "kitchen": "厨房斑马帘",
+      "design": "客厅设计",
+      "silver": "银色窗帘",
+      "yellow": "黄色窗帘",
+      "roller": "卷帘",
+      "treatment1": "窗饰方案1",
+      "treatment2": "窗饰方案2",
+      "zebra": "斑马帘",
+      "zebra2": "斑马帘2"
+    },
+    "nav": {
+      "previous": "上一张",
+      "next": "下一张",
+      "goToSlide": "跳转到幻灯片"
+    }
+  },
   "header": {
     "banner": "大多伦多地区免费上门测量与设计！立即预约！",
     "nav": {
@@ -108,4 +134,3 @@
     "zh": "中文"
   }
 }
-

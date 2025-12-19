@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 import './Gallery.css'
 
 // Import all gallery images
@@ -14,22 +15,23 @@ import img9 from '../../resource/_Zeba_show.jpeg'
 import img10 from '../../resource/_Zeba_show1.jpeg'
 
 const galleryImages = [
-  { src: img1, alt: 'Living Room Curtains' },
-  { src: img2, alt: 'Kitchen Zebra Blinds' },
-  { src: img3, alt: 'Living Room Design' },
-  { src: img4, alt: 'Silver Curtains' },
-  { src: img5, alt: 'Yellow Curtains' },
-  { src: img6, alt: 'Roller Blinds' },
-  { src: img7, alt: 'Window Treatment 1' },
-  { src: img8, alt: 'Window Treatment 2' },
-  { src: img9, alt: 'Zebra Blinds' },
-  { src: img10, alt: 'Zebra Blinds 2' },
+  { src: img1, altKey: 'gallery.images.livingRoom' },
+  { src: img2, altKey: 'gallery.images.kitchen' },
+  { src: img3, altKey: 'gallery.images.design' },
+  { src: img4, altKey: 'gallery.images.silver' },
+  { src: img5, altKey: 'gallery.images.yellow' },
+  { src: img6, altKey: 'gallery.images.roller' },
+  { src: img7, altKey: 'gallery.images.treatment1' },
+  { src: img8, altKey: 'gallery.images.treatment2' },
+  { src: img9, altKey: 'gallery.images.zebra' },
+  { src: img10, altKey: 'gallery.images.zebra2' },
 ]
 
 // Number of clones on each side for infinite effect
 const CLONE_COUNT = 3
 
 export function Gallery() {
+  const { t } = useTranslation()
   const [currentIndex, setCurrentIndex] = useState(1)
   const sliderRef = useRef<HTMLDivElement>(null)
   const isScrolling = useRef(false)
@@ -96,11 +98,11 @@ export function Gallery() {
       const scrollLeft = sliderRef.current.scrollLeft
       const itemWidth = getItemWidth()
       const extendedIndex = Math.round(scrollLeft / itemWidth)
-      
+
       // Convert extended index to original index
       let realIndex = (extendedIndex - CLONE_COUNT) % totalOriginal
       if (realIndex < 0) realIndex += totalOriginal
-      
+
       setCurrentIndex(realIndex)
     }
   }
@@ -149,35 +151,35 @@ export function Gallery() {
   return (
     <section className="gallery">
       <div className="gallery-container">
-        <button 
-          className="gallery-nav gallery-nav--prev" 
+        <button
+          className="gallery-nav gallery-nav--prev"
           onClick={handlePrev}
-          aria-label="Previous images"
+          aria-label={t('gallery.nav.previous')}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M15 18l-6-6 6-6"/>
+            <path d="M15 18l-6-6 6-6" />
           </svg>
         </button>
 
-        <div 
-          className="gallery-slider" 
+        <div
+          className="gallery-slider"
           ref={sliderRef}
           onScroll={handleScroll}
         >
           {extendedImages.map((image, index) => (
             <div key={index} className="gallery-item">
-              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={t(image.altKey)} />
             </div>
           ))}
         </div>
 
-        <button 
-          className="gallery-nav gallery-nav--next" 
+        <button
+          className="gallery-nav gallery-nav--next"
           onClick={handleNext}
-          aria-label="Next images"
+          aria-label={t('gallery.nav.next')}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M9 18l6-6-6-6"/>
+            <path d="M9 18l6-6-6-6" />
           </svg>
         </button>
       </div>
@@ -188,7 +190,7 @@ export function Gallery() {
             key={index}
             className={`gallery-dot ${index === currentIndex ? 'gallery-dot--active' : ''}`}
             onClick={() => scrollToIndex(index)}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={`${t('gallery.nav.goToSlide')} ${index + 1}`}
           />
         ))}
       </div>

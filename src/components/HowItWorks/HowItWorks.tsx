@@ -1,45 +1,48 @@
+import { useTranslation } from 'react-i18next'
 import './HowItWorks.css'
 
-const steps = [
-  {
-    id: 1,
-    icon: '💬',
-    title: 'Get In Touch',
-    description: 'Fill out a quick form to get started!',
-  },
-  {
-    id: 2,
-    icon: '✏️',
-    title: 'Customize',
-    description: 'We will follow up with all the options and help you customize the project to your needs.',
-  },
-  {
-    id: 3,
-    icon: '✓',
-    title: 'Say Yes!',
-    description: 'Once all the details are agreed upon and measurements are checked, we press go!',
-  },
-  {
-    id: 4,
-    icon: '🏭',
-    title: 'Production',
-    description: 'Our team will create your custom project to meet our specifications.',
-  },
-  {
-    id: 5,
-    icon: '🚚',
-    title: 'Deliver & Install',
-    description: "This is our favourite part! We will schedule an installation service or delivery. We hope you enjoy!",
-  },
-]
-
 export function HowItWorks() {
+  const { t } = useTranslation()
+
+  const steps = [
+    {
+      id: 1,
+      icon: '💬',
+      titleKey: 'howItWorks.steps.contact.title',
+      descriptionKey: 'howItWorks.steps.contact.description',
+    },
+    {
+      id: 2,
+      icon: '✏️',
+      titleKey: 'howItWorks.steps.customize.title',
+      descriptionKey: 'howItWorks.steps.customize.description',
+    },
+    {
+      id: 3,
+      icon: '✓',
+      titleKey: 'howItWorks.steps.confirm.title',
+      descriptionKey: 'howItWorks.steps.confirm.description',
+    },
+    {
+      id: 4,
+      icon: '🏭',
+      titleKey: 'howItWorks.steps.production.title',
+      descriptionKey: 'howItWorks.steps.production.description',
+    },
+    {
+      id: 5,
+      icon: '🚚',
+      titleKey: 'howItWorks.steps.delivery.title',
+      descriptionKey: 'howItWorks.steps.delivery.description',
+    },
+  ]
+
   return (
     <section className="how-it-works">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">HOW IT WORKS</h2>
-          <p className="section-subtitle">Make it Custom</p>
+          <h2 className="section-title">{t('howItWorks.title')}</h2>
+          <p className="section-subtitle">{t('howItWorks.subtitle')}</p>
         </div>
 
         <div className="steps-container">
@@ -48,12 +51,12 @@ export function HowItWorks() {
               <div className="step-icon">
                 <span>{step.icon}</span>
               </div>
-              <h3 className="step-title">{step.title}</h3>
-              <p className="step-description">{step.description}</p>
+              <h3 className="step-title">{t(step.titleKey)}</h3>
+              <p className="step-description">{t(step.descriptionKey)}</p>
               {index < steps.length - 1 && (
                 <div className="step-connector">
                   <svg width="40" height="20" viewBox="0 0 40 20">
-                    <path d="M0 10 L30 10 M25 5 L30 10 L25 15" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M0 10 L30 10 M25 5 L30 10 L25 15" stroke="currentColor" strokeWidth="2" fill="none" />
                   </svg>
                 </div>
               )}

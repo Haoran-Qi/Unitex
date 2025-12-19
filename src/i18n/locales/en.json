@@ -1,4 +1,30 @@
 {
+  "hero": {
+    "tagline": "Custom Curtains & Window Treatments",
+    "title": "Transform Your Space with Handcrafted Elegance",
+    "subtitle": "Made-to-measure curtains and blinds, designed and crafted in Toronto since 1970",
+    "cta": "Get Started",
+    "scroll": "Scroll to explore"
+  },
+  "gallery": {
+    "images": {
+      "livingRoom": "Living Room Curtains",
+      "kitchen": "Kitchen Zebra Blinds",
+      "design": "Living Room Design",
+      "silver": "Silver Curtains",
+      "yellow": "Yellow Curtains",
+      "roller": "Roller Blinds",
+      "treatment1": "Window Treatment 1",
+      "treatment2": "Window Treatment 2",
+      "zebra": "Zebra Blinds",
+      "zebra2": "Zebra Blinds 2"
+    },
+    "nav": {
+      "previous": "Previous images",
+      "next": "Next images",
+      "goToSlide": "Go to slide"
+    }
+  },
   "header": {
     "banner": "Free In-Home Measurement & Design in the Greater Toronto Area! Book Now!",
     "nav": {
@@ -108,4 +134,3 @@
     "zh": "中文"
   }
 }
-
