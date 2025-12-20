@@ -1,12 +1,16 @@
 import './Contact.css'
+import { useTranslation } from 'react-i18next'
 
 export function Contact() {
+
+  const { t } = useTranslation()
+
   return (
     <section id="contact" className="contact">
       <div className="container">
         <div className="contact-grid">
             <div className="contact-label-container">
-                <h1 className="contact-label">Contact</h1>
+                <h1 className="contact-label">{t('contact.label')}</h1>
             </div>
             <div className="contact-content">
                 <p className="contact-description">

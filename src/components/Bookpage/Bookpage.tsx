@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import './Bookpage.css';
+import { useTranslation } from 'react-i18next'
 
 export function Bookpage() {
+
+  const { t } = useTranslation()
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -87,7 +91,9 @@ export function Bookpage() {
   return (
     <div className="form-container">
       <div className="form-header">
-        <h2>Consultation Today</h2>
+        <h2>
+        {t('bookpage.form_header')}
+        </h2>
       </div>
 
       <form onSubmit={handleSubmit} className="personal-form">
@@ -95,7 +101,7 @@ export function Bookpage() {
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="firstName">
-                First Name <span className="required">*</span>
+                {t('bookpage.firstname.label')} <span className="required">*</span>
               </label>
               <input
                 type="text"
@@ -108,13 +114,13 @@ export function Bookpage() {
                 required
               />
               <span className="error-message" aria-live="polite">
-              !Enter a first name
+              {t('bookpage.firstname.error')}
               </span>
             </div>
 
             <div className="form-group">
               <label htmlFor="lastName">
-                Last Name <span className="required">*</span>
+                {t('bookpage.lastname.label')} <span className="required">*</span>
               </label>
               <input
                 type="text"
@@ -127,7 +133,7 @@ export function Bookpage() {
                 required
               />
               <span className="error-message" aria-live="polite">
-              !Enter a first name
+              {t('bookpage.firstname.error')}
               </span>
             </div>
           </div>
@@ -135,7 +141,7 @@ export function Bookpage() {
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="email">
-                Email <span className="required">*</span>
+                {t('bookpage.email.label')} <span className="required">*</span>
               </label>
               <input
                 type="email"
@@ -148,13 +154,13 @@ export function Bookpage() {
                 pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               />
               <span className="error-message" aria-live="polite">
-              !Enter an email address like example@mysite.com.
+              {t('bookpage.email.error')}
               </span>
             </div>
 
             <div className="form-group">
               <label htmlFor="phone">
-                Phone 
+              {t('bookpage.phone.label')} 
               </label>
               <input
                 type="tel"
@@ -170,7 +176,7 @@ export function Bookpage() {
           <div className="form-row">
             <div className="form-group full-width">
             <label htmlFor="address">
-                Address<span className="required">*</span>
+                {t('bookpage.address.label')}<span className="required">*</span>
             </label>
             <input
               type="text"
@@ -182,10 +188,10 @@ export function Bookpage() {
               required
             />
             <span className="error-message" aria-live="polite">
-              !Enter an address.
+            {t('bookpage.address.error')}
             </span>
             <div className="input-hint">
-              Street Address, City, Province, Postal Code
+            {t('bookpage.address.hint')}
             </div>
         </div>
 
@@ -194,7 +200,7 @@ export function Bookpage() {
           <div className="form-row">
           <div className="form-group full-width">
           <label htmlFor='products'>
-          What product(s) are you considering?<span className="required">*</span>
+          {t('bookpage.products.label')}<span className="required">*</span>
           </label>
           <div className="checkbox-grid">
             {products.map((product) => (
@@ -211,21 +217,23 @@ export function Bookpage() {
                 <label htmlFor={product.id} className="checkbox-label">
                   <span className="custom-checkbox"></span>
                   <div className="checkbox-content">
-                    <h4 className="checkbox-item-title">{product.label}</h4>
+                    <h4 className="checkbox-item-title">
+                    {t('bookpage.products.'+product.value)}
+                    </h4>
                   </div>    
                 </label>
               </div>
             ))}
           </div>
           <div className="input-hint">
-              Our blinds offer a motorized option, are compatible with smart home systems like HomeKit, Alexa, and Google Assistant, and feature solar charging for energy efficiency.
+              {t('bookpage.products.hint')}
             </div>
         
         </div>
         </div>
         <div className="form-row">
             <div className="form-group full-width">
-              <label htmlFor="numberwindows">What is the approx number of the windows?<span className="required">*</span>
+              <label htmlFor="numberwindows">{t('bookpage.window.label')}<span className="required">*</span>
               </label>
               <input
                 type="number"
@@ -234,16 +242,16 @@ export function Bookpage() {
                 value={formData.numberwindows}
                 onChange={handleChange}
                 required
-                placeholder="Enter a number"
+                placeholder={t('bookpage.window.placeholder')}
                 pattern="[0-9]{1,}"
               />
               <span className="error-message" aria-live="polite">
-              !Enter a number
+              {t('bookpage.window.error')}
               </span>
             </div>
 
             <div className="form-group full-width">
-              <label htmlFor="notes">Additional Notes</label>
+              <label htmlFor="notes">{t('bookpage.note.label')}</label>
               <textarea
                 id="notes"
                 name="notes"
@@ -252,14 +260,14 @@ export function Bookpage() {
                 rows="4"
               />
             <div className="input-hint">
-              Any other details about the window or custom features that you would like to add.
+              {t('bookpage.note.hint')}
             </div>
          </div>
         <div className="form-row">
           <div className="form-group">
             <div className="form-actions">
             <button type="submit" className="submit-btn">
-              Submit
+              {t('bookpage.submit')}
             </button>
             </div>
           </div>
