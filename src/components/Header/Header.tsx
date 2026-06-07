@@ -69,7 +69,7 @@ export function Header() {
       <div className="header-container">
         <Link to="/" className="logo">
           <img src={logoImg} alt="Unitex" className="logo-icon" />
-          <span className="logo-text">Unitex Design</span>
+          <span className="logo-text">Unitex Curtain</span>
         </Link>
 
         <nav className={`nav ${isMenuOpen ? 'nav--open' : ''}`}>
