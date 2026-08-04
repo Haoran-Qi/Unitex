@@ -1,10 +1,10 @@
 import { Header } from '../components/Header/Header'
 import { Gallery } from '../components/Gallery/Gallery'
+import { GoogleReviews } from '../components/GoogleReviews/GoogleReviews'
 import { BookingCTA } from '../components/BookingCTA/BookingCTA'
 import { Products } from '../components/Products/Products'
 import { HowItWorks } from '../components/HowItWorks/HowItWorks'
 import { About } from '../components/About/About'
-import { Testimonials } from '../components/Testimonials/Testimonials'
 import { Services } from '../components/Services/Services'
 import { Footer } from '../components/Footer/Footer'
 
@@ -14,11 +14,11 @@ export function HomePage() {
       <Header />
       <main>
         <Gallery />
+        <GoogleReviews />
         <BookingCTA />
         <Products />
         <HowItWorks />
         <About />
-        <Testimonials />
         <Services />
       </main>
       <Footer />

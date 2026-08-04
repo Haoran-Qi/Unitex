@@ -25,6 +25,28 @@
       "goToSlide": "Go to slide"
     }
   },
+  "googleReviews": {
+    "eyebrow": "Real Customer Reviews",
+    "title": "500+ Homes, Designed with Care.",
+    "titleBefore": "",
+    "titleAfter": " Homes, Designed with Care.",
+    "fiveStars": "Five stars",
+    "description": "We have helped more than 500 families design curtains for their homes. We value every customer, listen carefully, and do everything we can to help. We are proud to see so many customers happy with their spaces and their Unitex experience.",
+    "reviewCount": "{{count}} Google reviews",
+    "readReviews": "Read Google Reviews",
+    "writeReview": "View More Reviews",
+    "viewOnGoogle": "View on Google",
+    "businessPhoto": "Unitex project photo from Google",
+    "googleProfilePhoto": "Photo from our Google profile",
+    "viewPhotoOnGoogle": "View this photo on Google",
+    "photoBy": "Photo by",
+    "loading": "Loading our latest Google reviews…",
+    "unavailable": "Our live reviews are temporarily unavailable.",
+    "previous": "Previous review",
+    "next": "Next review",
+    "pagination": "Review navigation",
+    "goToReview": "Go to review {{number}}"
+  },
   "header": {
     "banner": "Free In-Home Measurement & Design in the Greater Toronto Area! Book Now!",
     "nav": {
@@ -205,7 +227,12 @@
     "tagline": "Transform your space with Unitex—custom curtains that combine timeless design, expert craftsmanship, and everyday comfort. From free measurement to final installation, we make the process simple, personal, and beautiful.",
     "company": "Company",
     "contact_info": "Contact Info",
-    "hours": "Mon - Fri : 9am-5pm",
+    "hours": "Business Hours",
+    "schedule": {
+      "mondayTuesday": { "days": "Monday–Tuesday", "hours": "Closed" },
+      "wednesdaySaturday": { "days": "Wednesday–Saturday", "hours": "12–5 p.m." },
+      "sunday": { "days": "Sunday", "hours": "Closed" }
+    },
     "address": "370 Hwy 7 unit 105c, Richmond Hill, ON L4B 0C4",
     "copyright": "© 2025 by Unitex Curtain Studio. All rights reserved."
   },

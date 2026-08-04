@@ -25,6 +25,28 @@
       "goToSlide": "跳转到幻灯片"
     }
   },
+  "googleReviews": {
+    "eyebrow": "真实客户评价",
+    "title": "服务 500+ 家庭，用心成就满意体验",
+    "titleBefore": "服务 ",
+    "titleAfter": " 家庭，用心成就满意体验",
+    "fiveStars": "五星评价",
+    "description": "我们已为超过 500 个家庭提供窗帘设计服务。我们珍惜每一位客人，用心倾听每一个需求，尽力帮助每一个家庭；看到众多客户对空间效果和 Unitex 服务体验感到满意，是我们最珍视的肯定。",
+    "reviewCount": "{{count}} 条 Google 评价",
+    "readReviews": "查看 Google 评价",
+    "writeReview": "查看更多评论",
+    "viewOnGoogle": "在 Google 上查看",
+    "businessPhoto": "来自 Google 的 Unitex 项目照片",
+    "googleProfilePhoto": "来自我们的 Google 商家资料",
+    "viewPhotoOnGoogle": "在 Google 上查看此照片",
+    "photoBy": "照片作者",
+    "loading": "正在加载最新 Google 评价…",
+    "unavailable": "实时评价暂时无法加载。",
+    "previous": "上一条评价",
+    "next": "下一条评价",
+    "pagination": "评价导航",
+    "goToReview": "查看第 {{number}} 条评价"
+  },
   "header": {
     "banner": "大多伦多地区免费上门测量与设计！立即预约！",
     "nav": {
@@ -205,7 +227,12 @@
     "tagline": "用Unitex改变您的空间——定制窗帘融合经典设计、精湛工艺与日常舒适。从免费测量到最终安装，我们让整个过程简单、贴心、美好。",
     "company": "公司",
     "contact_info": "联系方式",
-    "hours": "周一至周五：上午9点-下午5点",
+    "hours": "营业时间",
+    "schedule": {
+      "mondayTuesday": { "days": "星期一–星期二", "hours": "休息" },
+      "wednesdaySaturday": { "days": "星期三–星期六", "hours": "中午12点–下午5点" },
+      "sunday": { "days": "星期日", "hours": "休息" }
+    },
     "address": "370 Hwy 7 unit 105c, Richmond Hill, ON L4B 0C4",
     "copyright": "© 2025 Unitex窗帘工作室。版权所有。"
   },
