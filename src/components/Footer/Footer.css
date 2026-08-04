@@ -143,6 +143,46 @@
   object-fit: contain;
 }
 
+.contact-hours {
+  align-items: flex-start !important;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.business-hours {
+  width: 100%;
+  max-width: 260px;
+}
+
+.business-hours__title {
+  display: block;
+  margin-bottom: 0.55rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.business-hours__schedule {
+  display: grid;
+  gap: 0.38rem;
+}
+
+.business-hours__row {
+  display: grid;
+  grid-template-columns: minmax(125px, 1fr) auto;
+  gap: 1rem;
+}
+
+.business-hours__row dt,
+.business-hours__row dd {
+  margin: 0;
+}
+
+.business-hours__row dd {
+  color: rgba(255, 255, 255, 0.86);
+  text-align: right;
+}
+
 .footer-bottom {
   padding: 1.5rem 0;
   text-align: center;
@@ -183,5 +223,9 @@
 
   .contact-list li {
     justify-content: center;
+  }
+
+  .business-hours {
+    text-align: left;
   }
 }

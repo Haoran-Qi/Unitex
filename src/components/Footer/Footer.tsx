@@ -7,6 +7,7 @@ import wechatIcon from '../../resource/wechat.png'
 
 export function Footer() {
   const { t } = useTranslation()
+  const businessHourGroups = ['mondayTuesday', 'wednesdaySaturday', 'sunday']
 
   return (
     <footer id="contact" className="footer">
@@ -54,12 +55,22 @@ export function Footer() {
                 <span>unitex.curtain@gmail.com</span>
               </li>
               <li>
-                <span className="contact-icon">🕒</span>
-                <span>{t('footer.hours')}</span>
-              </li>
-              <li>
                 <img src={wechatIcon} alt="WeChat" className="contact-icon-img" />
                 <span>Unitexdesign</span>
+              </li>
+              <li className="contact-hours">
+                <span className="contact-icon">🕒</span>
+                <div className="business-hours">
+                  <span className="business-hours__title">{t('footer.hours')}</span>
+                  <dl className="business-hours__schedule">
+                    {businessHourGroups.map((group) => (
+                      <div className="business-hours__row" key={group}>
+                        <dt>{t(`footer.schedule.${group}.days`)}</dt>
+                        <dd>{t(`footer.schedule.${group}.hours`)}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>

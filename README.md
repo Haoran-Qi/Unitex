@@ -37,6 +37,19 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 ```
 
+### Google Reviews
+
+The homepage loads live rating and review data through the server-side
+`/api/google-reviews` endpoint. To enable it:
+
+1. Enable **Places API (New)** in Google Cloud and create a restricted API key.
+2. Add `GOOGLE_PLACES_API_KEY` to the Vercel project's environment variables.
+3. Redeploy the project.
+
+For local testing, copy `.env.example` to `.env.local`, fill in your own values,
+and run `npm run dev`. Vite serves the Google Reviews endpoint locally; Vercel
+CLI is not required. Never commit the real API key.
+
 
 ### Product Cards
 In `src/components/Products/Products.tsx`, update the `products` array with image paths:
