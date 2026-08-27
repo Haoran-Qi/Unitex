@@ -52,7 +52,7 @@ export function Footer() {
               </li>
               <li>
                 <span className="contact-icon">✉️</span>
-                <span>unitex.curtain@gmail.com</span>
+                <span>info@unitexcurtain.com</span>
               </li>
               <li>
                 <img src={wechatIcon} alt="WeChat" className="contact-icon-img" />
