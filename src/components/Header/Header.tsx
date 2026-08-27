@@ -20,11 +20,14 @@ export function Header() {
   const currentLang = languages.find(l => l.code === i18n.language) || languages[0]
 
   const navLinks = [
-    { path: '/', labelKey: 'header.nav.home' },
+    { path: '/#products', labelKey: 'header.nav.sheer' },
+    { path: '/#products', labelKey: 'header.nav.drapery' },
+    { path: '/#products', labelKey: 'header.nav.blinds' },
+    { path: '/#products', labelKey: 'header.nav.roman' },
+    { path: '/#products', labelKey: 'header.nav.honeycomb' },
+    { path: '/#products', labelKey: 'header.nav.motorized' },
     { path: '/about', labelKey: 'header.nav.about' },
-    { path: '/services', labelKey: 'header.nav.services' },
-    { path: '/book', labelKey: 'header.nav.book' },
-    // { path: '/projects', labelKey: 'header.nav.projects' },
+    { path: '/book', labelKey: 'header.nav.book', isCta: true },
   ]
 
   const isActive = (path: string) => {
@@ -34,6 +37,18 @@ export function Header() {
   const handleLanguageSelect = (code: Language) => {
     i18n.changeLanguage(code)
     setIsLangOpen(false)
+  }
+
+  const handleNavClick = (path: string) => {
+    setIsMenuOpen(false)
+
+    if (path === '/#products') {
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          document.querySelector('.products')?.scrollIntoView({ behavior: 'smooth' })
+        })
+      })
+    }
   }
 
   return (
@@ -85,8 +100,8 @@ export function Header() {
               <li key={link.labelKey}>
                 <Link
                   to={link.path}
-                  className={`nav-link ${isActive(link.path) ? 'nav-link--active' : ''}`}
-                  onClick={() => setIsMenuOpen(false)}
+                  className={`nav-link ${link.isCta ? 'nav-link--cta' : ''} ${isActive(link.path) ? 'nav-link--active' : ''}`}
+                  onClick={() => handleNavClick(link.path)}
                 >
                   {t(link.labelKey)}
                 </Link>
